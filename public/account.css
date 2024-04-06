@@ -7,7 +7,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-image: url(/images/bg.png);
+    background-image: url(../images/bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 1021px;
@@ -303,13 +303,14 @@ footer .footer img {
     cursor: pointer;
 }
 
-footer .footer span {
+footer .footer a {
     padding: 10px 16px;
     background-color: white;
     color: rgb(25, 25, 29);
     border-radius: 8px;
     font-family: 'gilroy';
     font-size: 16px;
+    text-decoration: none;
 }
 
 
