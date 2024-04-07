@@ -235,7 +235,8 @@ header .header .user .wallet span {
 }
 
 .userCabinet .rightContent .cryptoBalance > div .cryptoIcon {
-    width: 70px;
+    max-width: 70px;
+    width: 100%;
 }
 
 .userCabinet .rightContent .cryptoBalance > div:nth-child(2) .cryptoIcon,
@@ -476,7 +477,8 @@ footer .footer a {
     }
 
     .userCabinet .content .rightContent .cryptoBalance > div .cryptoIcon {
-        width: 55px;
+        max-width: 55px;
+        width: 100%;
     }
 
     .userCabinet .content .rightContent .cryptoBalance > div .info {
@@ -523,9 +525,6 @@ footer .footer a {
 }
 
 @media screen and (max-width: 820px) {
-    .wrapper {
-        height: 1150px;
-    }
 
     header .header .logo {
         display: none;
@@ -676,10 +675,6 @@ footer .footer a {
 @media screen and (max-width: 475px) {
     .center {
         width: 90%;
-    }
-
-    .wrapper {
-        height: 1100px;
     }
 
     .userCabinet {
