@@ -54,6 +54,90 @@ body::before {
     flex-direction: column;
 }
 
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/mobileMenuBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.mobileMenu .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobileMenu .bottom .navBar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.mobileMenu .bottom .navBar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'gilroy';
+    color: white;
+    border-radius: 4.78px;
+    background: rgb(25, 25, 34);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.mobileMenu .bottom .navBar a:first-child {
+    background: linear-gradient(90.00deg, rgb(9, 189, 252),rgb(51, 103, 230) 100%);
+}
+
+.mobileMenu .bottom .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobileMenu .bottom .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mobileMenu .bottom .user span {
+    color: white;
+    font-family: 'Girloy';
+    font-weight: 800;
+    font-size: 14px;
+    padding: 11px 14px;
+    border-radius: 12px;
+    box-shadow: 10px 15px 18px 0px rgba(23, 23, 36, 0.15);
+    background: linear-gradient(97.24deg, rgb(1, 201, 253) 0.148%,rgb(51, 103, 230) 118.015%);
+    border: 2px solid rgb(0, 152, 234);
+}
+
+.mobileMenu .closeMenu {
+    align-self: end;
+    border-radius: 0px 0px 0px 8px;
+    background: rgb(25, 25, 34);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mobileMenu .closeMenu img {
+    width: 100%;
+    height: 100%;
+}
+
+
 header {
     background: rgb(30, 30, 40);
     height: 83px;
@@ -111,6 +195,13 @@ header .header .user {
     display: flex;
     align-items: center;
     gap: 18px;
+}
+
+header .header .user img:last-child {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 header .header .user .wallet {
@@ -264,9 +355,10 @@ header .header .user .wallet span {
     gap: 45px;
 }
 
-.event .eventConten img {
+.event .eventContent img {
     width: 473px;
     height: 473px;
+    border-radius: 50%;
 }
 
 .event .eventContent .eventDescription {
@@ -350,6 +442,184 @@ footer .footer a {
     text-decoration: none;
 }
 
+/* wiki */
+
+.wiki .wikiContent .hatInfo,
+.wiki .wikiContent .thimblesInfo {
+    display: none;
+}
+
+.wiki {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.wiki .wikiContent {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 14px;
+    background: rgb(30, 30, 40);
+    padding: 43px 63px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    padding-bottom: 150px;
+}
+
+.wiki .wikiContent .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wiki .wikiContent .header .close {
+    border-radius: 6px;
+    background: rgb(25, 25, 34);
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.wiki .wikiContent .header .close img {
+    width: 100%;
+    height: 100%;
+}
+
+.wiki .wikiContent .header .games {
+    display: flex;
+    gap: 77px;
+}
+
+.wiki .wikiContent .header .games a {
+    text-decoration: none;
+    color: white;
+    font-family: 'gilroy';
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 26px;
+    border-radius: 6px;
+    background: rgb(25, 25, 34);
+}
+
+.wiki .wikiContent .header .games a:last-child {
+    padding: 12px 40px;
+    background: linear-gradient(90.00deg, rgb(3, 198, 252),rgb(51, 103, 230) 100%);
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription,
+.wiki .wikiContent .hatInfo .gameDescription,
+.wiki .wikiContent .thimblesInfo .gameDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription h4,
+.wiki .wikiContent .hatInfo .gameDescription h4,
+.wiki .wikiContent .thimblesInfo .gameDescription h4 {
+    background: linear-gradient(90.00deg, rgb(6, 193, 251),rgb(128, 108, 212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'gilroy';
+    font-size: 48px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription .jackPot,
+.wiki .wikiContent .hatInfo .gameDescription .hat,
+.wiki .wikiContent .thimblesInfo .gameDescription .thimbles {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    height: 139px;
+    background: rgb(25, 25, 34);
+    align-items: center;
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription .jackPot img,
+.wiki .wikiContent .hatInfo .gameDescription .hat img,
+.wiki .wikiContent .thimblesInfo .gameDescription .thimbles img {
+    padding-left: 20px;
+    height: min-content;
+}
+
+
+.wiki .wikiContent .jackPotInfo .gameDescription .jackPot p,
+.wiki .wikiContent .hatInfo .gameDescription .hat p,
+.wiki .wikiContent .thimblesInfo .gameDescription .thimbles p {
+    color: rgb(255, 255, 255);
+    font-family: 'gilroy';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    align-self: center;
+}
+
+.wiki .wikiContent .jackPotInfo {
+    display: flex;
+}
+
+.wiki .wikiContent .jackPotInfo,
+.wiki .wikiContent .hatInfo,
+.wiki .wikiContent .thimblesInfo {
+    flex-direction: column;
+    gap: 65px;
+}
+
+.wiki .wikiContent .jackPotInfo .guid,
+.wiki .wikiContent .hatInfo .guid,
+.wiki .wikiContent .thimblesInfo .guid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wiki .wikiContent .jackPotInfo .guid h4,
+.wiki .wikiContent .hatInfo .guid h4,
+.wiki .wikiContent .thimblesInfo .guid h4 {
+    background: linear-gradient(90.00deg, rgb(6, 193, 251),rgb(128, 108, 212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'gilroy';
+    font-size: 24px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.wiki .wikiContent .jackPotInfo .guid .items,
+.wiki .wikiContent .hatInfo .guid .items,
+.wiki .wikiContent .thimblesInfo .guid .items {
+    display: flex;
+    gap: 33px;
+}
+
+.wiki .wikiContent .jackPotInfo .guid .items > div,
+.wiki .wikiContent .hatInfo .guid .items > div,
+.wiki .wikiContent .thimblesInfo .guid .items > div {
+    padding: 38px 28px;
+    background: rgb(25, 25, 34);
+}
+
+.wiki .wikiContent .jackPotInfo .guid .items > div p,
+.wiki .wikiContent .hatInfo .guid .items > div p,
+.wiki .wikiContent .thimblesInfo .guid .items > div p {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 16px;
+    font-weight: 600;
+}
+
 
 
 /* Media */
@@ -405,6 +675,10 @@ footer .footer a {
     .event .eventContent .eventDescription .text {
         gap: 20px;
     }
+
+    .wiki .wikiContent {
+        max-width: 85%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -428,10 +702,6 @@ footer .footer a {
 
     header .header .user .wallet span{
         font-size: 12px;
-    }
-
-    header .header .user img:last-child {
-        width: 50px;
     }
 
     header .header .user {
@@ -484,6 +754,45 @@ footer .footer a {
     footer {
         height: max-content;
         padding: 20px 10px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items, 
+    .wiki .wikiContent .hatInfo .guid .items, 
+    .wiki .wikiContent .thimblesInfo .guid .items {
+        gap: 2%;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items > div, 
+    .wiki .wikiContent .hatInfo .guid .items > div, 
+    .wiki .wikiContent .thimblesInfo .guid .items > div {
+        padding: 20px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items > div p, 
+    .wiki .wikiContent .hatInfo .guid .items > div p, 
+    .wiki .wikiContent .thimblesInfo .guid .items > div p {
+        font-size: 12px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .gameDescription .jackPot p, 
+    .wiki .wikiContent .hatInfo .gameDescription .hat p, 
+    .wiki .wikiContent .thimblesInfo .gameDescription .thimbles p {
+        font-size: 14px;
+    }
+
+    .wiki .wikiContent .header .games {
+        width: 80%;
+        gap: 10%;
+    }
+
+    .wiki .wikiContent .header .games a {
+        padding: 8px 16px;
+        height: min-content;
+    }
+
+    .wiki .wikiContent .header .games a:last-child {
+        padding: 8px 24px;
+        height: min-content;
     }
 }
 
@@ -552,6 +861,93 @@ footer .footer a {
         gap: 0;
         text-align: center;
     }
+
+    .wiki .wikiContent {
+        padding: 40px;
+    }
+
+    .wiki .wikiContent .header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wiki .wikiContent .header .close {
+        order: -1;
+        align-self: end;
+    }
+
+    .wiki .wikiContent .header .games {
+        width: 100%;
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .wiki .wikiContent .header .games a {
+        font-size: 14px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items, 
+    .wiki .wikiContent .hatInfo .guid .items, 
+    .wiki .wikiContent .thimblesInfo .guid .items {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items > div, 
+    .wiki .wikiContent .hatInfo .guid .items > div, 
+    .wiki .wikiContent .thimblesInfo .guid .items > div {
+        width: 80%;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items > div p, 
+    .wiki .wikiContent .hatInfo .guid .items > div p, 
+    .wiki .wikiContent .thimblesInfo .guid .items > div p {
+        font-size: 16px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .gameDescription .jackPot, 
+    .wiki .wikiContent .hatInfo .gameDescription .hat, 
+    .wiki .wikiContent .thimblesInfo .gameDescription .thimbles {
+        flex-direction: column;
+        height: max-content;
+        align-items: start;
+        padding: 20px 0px;
+        width: 95%;
+        margin: 0 auto
+    }
+
+    .wiki .wikiContent .jackPotInfo .gameDescription .jackPot p, 
+    .wiki .wikiContent .hatInfo .gameDescription .hat p, 
+    .wiki .wikiContent .thimblesInfo .gameDescription .thimbles p {
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    .wiki {
+        height: max-content;
+    }
+
+    .wiki .wikiContent {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .gameDescription h4, 
+    .wiki .wikiContent .hatInfo .gameDescription h4, 
+    .wiki .wikiContent .thimblesInfo .gameDescription h4 {
+        padding-left: 20px;
+        font-size: 40px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid h4, 
+    .wiki .wikiContent .hatInfo .guid h4, 
+    .wiki .wikiContent .thimblesInfo .guid h4 {
+        padding-left: 20px;
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 475px) {
@@ -607,5 +1003,63 @@ footer .footer a {
     footer .footer img {
         width: 25px;
         height: 25px;
+    }
+
+    .mobileMenu .bottom .navBar {
+        gap: 15px;
+        width: 80%;
+    }
+    
+    .mobileMenu {
+        background-position: center;
+        gap: 30px;
+        height: 550px;
+    }
+
+    .mobileMenu .bottom {
+        gap: 50px;
+    }
+
+    .wiki .wikiContent .header .games {
+        flex-direction: column;
+        width: 90%;
+        align-self: center;
+        gap: 12px;
+    }
+
+    .wiki .wikiContent .header .games a {
+        padding: 12px 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .wiki .wikiContent .header .games a:last-child {
+        padding: 12px 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .guid .items > div, 
+    .wiki .wikiContent .hatInfo .guid .items > div, 
+    .wiki .wikiContent .thimblesInfo .guid .items > div {
+        padding: 36px 42px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .wiki .wikiContent {
+        gap: 20px;
+    }
+
+    .wiki .wikiContent .jackPotInfo, 
+    .wiki .wikiContent .hatInfo, 
+    .wiki .wikiContent .thimblesInfo {
+        gap: 23px;
+    }
+
+    .wiki .wikiContent .jackPotInfo .gameDescription, 
+    .wiki .wikiContent .hatInfo .gameDescription, 
+    .wiki .wikiContent .thimblesInfo .gameDescription {
+        gap: 12px;
     }
 }

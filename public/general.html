@@ -11,12 +11,29 @@
     <div class="wrapper">
         <div class="bg"></div>
             <div class="content">
+                <div class="mobileMenu" id="mobileMenu">
+                    <div class="closeMenu" id="closeMenu" ><img src="../images/closeMenu.svg" alt="close"></div>
+                    <div class="bottom">
+                        <div class="user">
+                            <span>Подключить кошелек</span>
+                            <img id="linkToAccout" src="../images/lightBlueAvatar.png" alt="avatar">
+                        </div>
+    
+                        <div class="navBar">
+                                <a href="general.html">Главная</a>
+                                <a href="#">Напёрстки</a>
+                                <a href="#">Орёл и решка</a>
+                                <a href="#">Джекпот</a>
+                                <a href="#">Тех.поддержка</a>
+                        </div>
+                    </div>
+                </div>
                 <header>
                     <div class="header center">
-                        <img class="burger" src="../images/burgerMenu.svg" alt="menu">
+                        <img class="burger" id="openMenu" src="../images/burgerMenu.svg" alt="menu">
                         <div class="logo">
                             <img src="../images/logo.svg" alt="logo">
-                            <h4>Black<br>Token</h4>
+                            <h4>Black<br>Casino</h4>
                         </div>
                         <div class="navBar">
                             <ul>
@@ -31,7 +48,7 @@
                             <div class="wallet">
                                 <span>Подключить кошелек</span>
                             </div>
-                            <img src="../images/userAvatar.svg" alt="userAvatar">
+                            <img id="linkToAccoutQ" src="../images/lightBlueAvatar.png" alt="avatar">
                         </div>
                     </div>
                 </header>
@@ -113,10 +130,124 @@
                 <footer>
                     <div class="footer center">
                         <img src="../images/telegramIcon.svg" alt="telegram">
-                        <a href="#">Как работает</a>
+                        <a id="openWiki" href="#">Как работает</a>
                     </div>
                 </footer>
             </div>
+
+            <div class="wiki" id="wiki">
+                <div class="wikiContent">
+                    <div class="header">
+                        <div class="games">
+                            <a id="thimblesLink" href="#">Напёрстки</a>
+                            <a id="hatLink" href="#">Орёл и решка</a>
+                            <a id="jackPotLink" href="#">Джекпот</a>
+                        </div>
+    
+                        <div class="close" id="close">
+                            <img src="../images/closeMenu.svg" alt="close">
+                        </div>
+                    </div>
+    
+                    <div class="jackPotInfo" id="jackPotInfo">
+                        <div class="gameDescription">
+                            <h4>Джекпот</h4>
+                            <div class="jackPot">
+                                <img src="../images/jackpot.svg" alt="jackpot">
+                                <p>Джекпот - это многопользовательский режим, в котором ставки всех игроков <br> суммируются <br>
+                                    для получения джекпота. Победитель джекпота забирает все</p>
+                            </div>
+                        </div>
+    
+                        <div class="guid">
+                            <h4>Как работает?</h4>
+                            <div class="items">
+                                <div class="item1">
+                                    <p>Делайте ставку. Чем выше ваша ставка, тем выше ваши шансы на выигрыш</p>
+                                </div>
+                                
+                                <div class="item2">
+                                    <p>Дождитесь необходимого количества транзакций в текущем раунде или делайте новые ставки</p>
+                                </div>
+    
+                                <div class="item3">
+                                    <p>Победитель будет выбран после того, как будет получено необходимое количество транзакций</p>
+                                </div>
+    
+                                <div class="item4">
+                                    <p>Победитель получает все! Автоматический перевод джекпота на кошелек победителя</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="hatInfo" id="hatInfo">
+                        <div class="gameDescription">
+                            <h4>Орёл и рёшка</h4>
+                            <div class="hat">
+                                <img src="../images/hat.svg" alt="jackpot">
+                                <p>Орел и решка - это простая игра, которая обычно играется с помощью монеты. В каждом раунде игрок должен выбрать одну из двух сторон монеты: орла или решку.</p>
+                            </div>
+                        </div>
+    
+                        <div class="guid">
+                            <h4>Как работает?</h4>
+                            <div class="items">
+                                <div class="item1">
+                                    <p>Делайте ставку. Чем выше ваша ставка, тем больше вы можете выиграть</p>
+                                </div>
+                                
+                                <div class="item2">
+                                    <p>Нажмите кнопку подбросить монету и дождаться следующих событий</p>
+                                </div>
+    
+                                <div class="item3">
+                                    <p>После того, как монета покажет сторону орла или решки, определится победитель вы или нет</p>
+                                </div>
+    
+                                <div class="item4">
+                                    <p>Если вы победили в игре, то забираете свою ставку и дополнительную, которая обозначена</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="thimblesInfo" id="thimblesInfo">
+                        <div class="gameDescription">
+                            <h4>Напёрстки</h4>
+                            <div class="thimbles">
+                                <img src="../images/Thimbles.svg" alt="jackpot">
+                                <p>Игра "Напёрстки" - это игра на трюки с помощью трех напёрстков и маленького шарика или другого предмета, который можно спрятать под один из напёрстков.</p>
+                            </div>
+                        </div>
+    
+                        <div class="guid">
+                            <h4>Как работает?</h4>
+                            <div class="items">
+                                <div class="item1">
+                                    <p>Игра начинается с того, что у вас есть три напёрстка и маленький шарик</p>
+                                </div>
+                                
+                                <div class="item2">
+                                    <p>Затем наперстки начинаются в хаотическом порядке с целью запутать игрока</p>
+                                </div>
+    
+                                <div class="item3">
+                                    <p>Игроку предлагается угадать, под каким напёрстком находится шарик</p>
+                                </div>
+    
+                                <div class="item4">
+                                    <p>Если вы победили в игре, то забираете свою ставку и дополнительную, которая обозначена</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
     </div>  
+
+    <script src="main.js"></script>
 </body>
 </html>
