@@ -48,6 +48,32 @@
         max-width: 95%;
         width: 100%;
     }
+
+    .gamesContent .gamesList > div {
+        gap: 5%;
+    }
+
+    .gamesContent .gamesList > div p {
+        padding-right: 20px;
+    }
+
+    .roadMap .roadMapContent .items {
+        grid-template-columns: repeat(3,31%);
+        gap: 3%;
+    }
+
+    .event .eventContent img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .event .eventContent .eventDescription a {
+        margin-top: 0;
+    }
+
+    .event .eventContent .eventDescription .text {
+        gap: 20px;
+    }
 }
 
 
@@ -226,6 +252,62 @@
 
     .choiceSum .content .bottom input {
         width: 100%;
+    }
+
+
+    .gamesContent .gamesList > div p {
+        font-size: 14px;
+    }
+
+    .roadMap .roadMapContent .items {
+        grid-template-rows: repeat(2, min-content);
+    }
+
+    .roadMap .roadMapContent .items > div {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .roadMap .roadMapContent .items > div h5 {
+        font-size: 15px;
+    }
+
+    .roadMap .roadMapContent .items > div p {
+        font-size: 14px;
+    }
+
+    .gamesContent .gamesList > div p {
+        font-size: 14px;
+    }
+
+    .roadMap .roadMapContent .items {
+        grid-template-rows: repeat(2, min-content);
+    }
+
+    .roadMap .roadMapContent .items > div {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .roadMap .roadMapContent .items > div h5 {
+        font-size: 15px;
+    }
+
+    .roadMap .roadMapContent .items > div p {
+        font-size: 14px;
+    }
+
+    .event .eventContent {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .event .eventContent .eventDescription {
+        align-items: center;
+    }
+
+    .event .eventContent img {
+        display: none;
     }
 }
 
@@ -619,6 +701,97 @@
     .fail .content {
         gap: 20px;
     }
+
+    .alert {
+        width: 90%;
+        height: max-content;
+    }
+
+    .alert span {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .gamesContent .gamesList > div {
+        flex-direction: column;
+        height: max-content;
+        align-items: start;
+        gap: 10px;
+        padding: 20px 0px;
+    }
+
+    .gamesContent .gamesList > div img {
+        padding-left: 20px;
+    }
+
+    .gamesContent .gamesList > div p {
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    .roadMap .roadMapContent .items {
+        grid-template-columns: repeat(2,45%);
+        column-gap: 5%;
+        grid-template-rows: repeat(3, min-content);
+        justify-content: center;
+    }
+
+    .roadMap .roadMapContent .items > div h5 {
+        font-size: 12px;
+    }
+
+    .roadMap .roadMapContent .items > div p {
+        font-size: 12px;
+    }
+
+    .roadMap .roadMapContent h4 {
+        font-size: 32px;
+    }
+
+    .event .eventContent .eventDescription .text {
+        gap: 0;
+        text-align: center;
+    }
+
+    .gamesContent .gamesList > div p {
+        font-size: 16px;
+    }
+
+    .gamesContent h4 {
+        font-size: 32px;
+    }
+
+    .roadMap .roadMapContent .items {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .roadMap .roadMapContent .items > div {
+        padding: 22px 23px 30px 12px;
+        gap: 17px;
+    }
+
+    .roadMap .roadMapContent .items > div h5 {
+        font-size: 18px;
+    }
+
+    .roadMap .roadMapContent .items > div p {
+        font-size: 18px;
+    }
+
+    .event .eventContent .eventDescription h4 {
+        font-size: 32px;
+    }
+
+    .event .eventContent .eventDescription a {
+        padding: 10px 30%;
+    }
+
+    .event {
+        margin-top: 22px;
+    }
 }
 
 
@@ -741,10 +914,14 @@
         gap: 12px;
     }
 
+    .jackPotGame .gameContent {
+        gap: 10px;
+    }
+
 
     .jackPotGame .gameContent .players > div .userAvatar {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
     }
 
     .jackPotGame .gameContent .players {
@@ -752,28 +929,28 @@
     }
 
     .jackPotGame .gameContent .players > div .pay .wallet img {
-        width: 7px;
-        height: 7px;
+        width: 9px;
+        height: 9px;
     }
 
     .jackPotGame .gameContent .players > div .pay .wallet p {
-        font-size: 6px;
+        font-size: 7px;
     }
 
     .jackPotGame .gameContent .players > div {
         height: 0px;
-        padding: 4px;
+        padding: 9px;
         gap: 6px;
         align-items: center;
     }
 
     .jackPotGame .gameContent .players > div .pay p {
-        font-size: 6px;
+        font-size: 8px;
     }
 
     .jackPotGame .gameContent .scroll {
-        height: 70px;
-        width: 80%;
+        height: 90px;
+        width: 90%;
         align-self: center;
         padding-right: 0;
     }
