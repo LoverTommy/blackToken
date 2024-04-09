@@ -1,0 +1,1035 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../images/bg.png);
+    background-size: contain;
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    filter: brightness(40%);
+}
+
+.content {
+    z-index: 2;
+    position:relative;
+}
+
+.center {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bgFilter {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.62);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/mobileMenuBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.mobileMenu .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobileMenu .bottom .navBar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.mobileMenu .bottom .navBar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'gilroy';
+    color: white;
+    border-radius: 4.78px;
+    background: rgb(25, 25, 34);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.mobileMenu .bottom .navBar a:first-child {
+    background: linear-gradient(90.00deg, rgb(9, 189, 252),rgb(51, 103, 230) 100%);
+}
+
+.mobileMenu .bottom .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobileMenu .bottom .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mobileMenu .bottom .user span {
+    color: white;
+    font-family: 'Girloy';
+    font-weight: 800;
+    font-size: 14px;
+    padding: 11px 14px;
+    border-radius: 12px;
+    box-shadow: 10px 15px 18px 0px rgba(23, 23, 36, 0.15);
+    background: linear-gradient(97.24deg, rgb(1, 201, 253) 0.148%,rgb(51, 103, 230) 118.015%);
+    border: 2px solid rgb(0, 152, 234);
+}
+
+.mobileMenu .closeMenu {
+    align-self: end;
+    border-radius: 0px 0px 0px 8px;
+    background: rgb(25, 25, 34);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mobileMenu .closeMenu img {
+    width: 100%;
+    height: 100%;
+}
+
+
+header {
+    background: rgb(30, 30, 40);
+    height: 83px;
+}
+
+header .header .burger {
+    display: none;
+}
+
+header .header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header .header .logo {
+    display: flex;
+    gap: 11.33px;
+    align-items: center;
+}
+
+header .header .logo h4 {
+    font-family: 'gilroy';
+    font-size: 17px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header .header .navBar ul {
+    display: flex;
+    gap: 54px;
+}
+
+header .header .navBar ul li {
+    list-style: none;
+}
+
+header .header .navBar ul li a{
+    color: white;
+    font-family: 'gilroy';
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header .header .navBar ul li:nth-child(4) a {
+    padding: 10px 29px;
+    border-radius: 6px;
+        background: linear-gradient(97.24deg, rgb(1, 201, 253) 0.647%,rgb(51, 103, 230) 117.455%);
+}
+
+header .header .user {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+header .header .user img:last-child {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header .header .user .wallet {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 11px 14px;
+    border-radius: 12px;
+    box-shadow: 10px 15px 18px 0px rgba(23, 23, 36, 0.15);
+    background: linear-gradient(97.24deg, rgb(1, 201, 253) 0.148%,rgb(51, 103, 230) 118.015%);
+    border: 2px solid rgb(0, 152, 234);
+}
+
+header .header .user .wallet span {
+    color: white;
+    font-family: 'Girloy';
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.alert {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    background: rgb(244, 62, 50);
+    align-self: center;
+}
+
+.alert span {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.jackPotGame {
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.jackPotGame .gameContent {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.jackPotGame .gameContent .gameI {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 46px 20px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.jackPotGame .gameContent .gameI .alert img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.jackPotGame .gameContent .gameI .jackPotSum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+    border-radius: 6px;
+    background: linear-gradient(90.00deg, rgb(1, 201, 253),rgb(52, 103, 230) 100%);
+}
+
+.jackPotGame .gameContent .gameI .jackPotSum h4 {
+    color: white;
+    font-family: 'Gilroy';
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.jackPotGame .gameContent .gameI .gameInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .queuePlayers {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .queuePlayers h5 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .queuePlayers span {
+    color: rgb(48, 109, 232);
+    font-family: 'gilroy';
+    font-size: 10px;
+    font-weight: 500;
+    padding: 6px 4px;
+    border-radius: 6px;
+    background: rgb(29, 29, 29);
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .progress {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .progress .progressLine {
+    height: 100%;
+    width: 30%;
+    border-radius: 22px;
+    background: linear-gradient(106.57deg, rgb(2, 201, 253) 0.003%,rgb(117, 33, 199) 167.778%);
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .gameRules {
+    display: flex;
+    gap: 51px;
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .gameRules > div h5 {
+    color: white;
+    font-family: 'Gilroy';
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.jackPotGame .gameContent .gameI .gameInfo .gameRules > div h5 span {
+    color: rgb(48, 109, 232);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.jackPotGame .gameContent .gameI .bet {
+    display: flex;
+    gap: 7px;
+    padding: 12px 60px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6.26px;
+    box-shadow: 0px 3.91px 19.55px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
+    width: max-content;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.jackPotGame .gameContent .gameI .bet h4 {
+    color: white;
+    font-family: 'play';
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.jackPotGame .gameContent .players {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 200px;
+    width: 98%;
+}
+
+.jackPotGame .gameContent .scroll {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 265px;
+    padding-right: 20px;
+    width: 98%;
+}
+
+.jackPotGame .gameContent .scroll::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+    background: rgba(139, 139, 139, 0.253); 
+}
+
+.jackPotGame .gameContent .scroll::-webkit-scrollbar-thumb {
+    border-radius: 57px;
+    background: rgb(51, 104, 230);
+}
+
+.jackPotGame .gameContent .players > div {
+    width: 98%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: rgba(0, 0, 0, 0.16);
+    gap: 20px;
+    padding: 10px 15px;
+}
+
+.jackPotGame .gameContent .players > div .userAvatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.jackPotGame .gameContent .players > div .pay {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.jackPotGame .gameContent .players > div .pay .wallet {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.jackPotGame .gameContent .players > div .pay .wallet img {
+    width: 19px;
+    height: 19px;
+}
+
+.jackPotGame .gameContent .players > div .pay .wallet p {
+    color: white;
+    font-family: 'play';
+    font-size: 16px;
+}
+
+.jackPotGame .gameContent .players > div .pay p {
+    color: white;
+    font-family: 'play';
+    font-size: 16px;
+}
+
+.jackPotGame .gameContent .players > div .pay p span {
+    font-weight: 700;
+}
+
+
+
+
+footer {
+    margin-top: 64px;
+    height: 77px;
+    background: rgb(30, 30, 40);
+}
+
+footer .footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer .footer img {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+footer .footer a {
+    padding: 10px 16px;
+    background-color: white;
+    color: rgb(25, 25, 29);
+    border-radius: 8px;
+    font-family: 'gilroy';
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* wiki */
+
+.wiki .wikiContent .hatInfo,
+.wiki .wikiContent .thimblesInfo {
+    display: none;
+}
+
+.wiki {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.wiki .wikiContent {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 14px;
+    background: rgb(30, 30, 40);
+    padding: 43px 63px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    padding-bottom: 150px;
+    position: fixed;
+    height: max-content;
+}
+
+.wiki .wikiContent .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wiki .wikiContent .header .close {
+    border-radius: 6px;
+    background: rgb(25, 25, 34);
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.wiki .wikiContent .header .close img {
+    width: 100%;
+    height: 100%;
+}
+
+.wiki .wikiContent .header .games {
+    display: flex;
+    gap: 77px;
+}
+
+.wiki .wikiContent .header .games a {
+    text-decoration: none;
+    color: white;
+    font-family: 'gilroy';
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 26px;
+    border-radius: 6px;
+    background: rgb(25, 25, 34);
+}
+
+.wiki .wikiContent .header .games a:last-child {
+    padding: 12px 40px;
+    background: linear-gradient(90.00deg, rgb(3, 198, 252),rgb(51, 103, 230) 100%);
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription,
+.wiki .wikiContent .hatInfo .gameDescription,
+.wiki .wikiContent .thimblesInfo .gameDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription h4,
+.wiki .wikiContent .hatInfo .gameDescription h4,
+.wiki .wikiContent .thimblesInfo .gameDescription h4 {
+    background: linear-gradient(90.00deg, rgb(6, 193, 251),rgb(128, 108, 212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'gilroy';
+    font-size: 48px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription .jackPot,
+.wiki .wikiContent .hatInfo .gameDescription .hat,
+.wiki .wikiContent .thimblesInfo .gameDescription .thimbles {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    height: 139px;
+    background: rgb(25, 25, 34);
+    align-items: center;
+}
+
+.wiki .wikiContent .jackPotInfo .gameDescription .jackPot img,
+.wiki .wikiContent .hatInfo .gameDescription .hat img,
+.wiki .wikiContent .thimblesInfo .gameDescription .thimbles img {
+    padding-left: 20px;
+    height: min-content;
+}
+
+
+.wiki .wikiContent .jackPotInfo .gameDescription .jackPot p,
+.wiki .wikiContent .hatInfo .gameDescription .hat p,
+.wiki .wikiContent .thimblesInfo .gameDescription .thimbles p {
+    color: rgb(255, 255, 255);
+    font-family: 'gilroy';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    align-self: center;
+}
+
+.wiki .wikiContent .jackPotInfo {
+    display: flex;
+}
+
+.wiki .wikiContent .jackPotInfo,
+.wiki .wikiContent .hatInfo,
+.wiki .wikiContent .thimblesInfo {
+    flex-direction: column;
+    gap: 65px;
+}
+
+.wiki .wikiContent .jackPotInfo .guid,
+.wiki .wikiContent .hatInfo .guid,
+.wiki .wikiContent .thimblesInfo .guid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wiki .wikiContent .jackPotInfo .guid h4,
+.wiki .wikiContent .hatInfo .guid h4,
+.wiki .wikiContent .thimblesInfo .guid h4 {
+    background: linear-gradient(90.00deg, rgb(6, 193, 251),rgb(128, 108, 212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'gilroy';
+    font-size: 24px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.wiki .wikiContent .jackPotInfo .guid .items,
+.wiki .wikiContent .hatInfo .guid .items,
+.wiki .wikiContent .thimblesInfo .guid .items {
+    display: flex;
+    gap: 33px;
+}
+
+.wiki .wikiContent .jackPotInfo .guid .items > div,
+.wiki .wikiContent .hatInfo .guid .items > div,
+.wiki .wikiContent .thimblesInfo .guid .items > div {
+    padding: 38px 28px;
+    background: rgb(25, 25, 34);
+}
+
+.wiki .wikiContent .jackPotInfo .guid .items > div p,
+.wiki .wikiContent .hatInfo .guid .items > div p,
+.wiki .wikiContent .thimblesInfo .guid .items > div p {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* ChoiceCurrency */
+
+.choiceCurrency {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceCurrency .content {
+    border-radius: 16px;
+    background: rgb(18, 18, 18);
+    padding: 53px 32px;
+    width: 1020px;
+    height: max-content;
+    z-index: 5000;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.choiceCurrency .content .cryptoBalance {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    align-self: center;
+    max-height: 270px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.choiceCurrency .content h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.choiceCurrency .content .cryptoBalance::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+    background: rgba(139, 139, 139, 0.253); 
+}
+
+.choiceCurrency .content .cryptoBalance::-webkit-scrollbar-thumb {
+    border-radius: 57px;
+    background: rgb(51, 104, 230);
+}
+
+.choiceCurrency .content .cryptoBalance > div {
+    display: flex;
+    gap: 24.23px;
+    align-items: center;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .flex {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.choiceCurrency .content .cryptoBalance > div .cryptoIcon {
+    max-width: 60px;
+    width: 100%;
+}
+
+.choiceCurrency .content .cryptoBalance > div .cryptoIcon {
+    border-radius: 50%;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .name h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .name span {
+    color: rgb(129, 129, 129);
+    font-family: 'gilroy';
+    font-size: 18.46px;
+    font-weight: 250;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.85px;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .amount span:first-child {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 23px;
+    font-weight: 800;
+    align-self: end;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .amount span:last-child {
+    color: rgb(129, 129, 129);
+    font-family: 'gilroy';
+    font-size: 18.46px;
+    font-weight: 250;
+    letter-spacing: 1px;
+}
+
+.choiceCurrency .content .cryptoBalance > div .info .choice {
+    cursor: pointer;
+    height: max-content;
+    color: white;
+    font-family: 'play';
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 68px;
+    border-radius: 4.39px;
+    box-shadow: 0px 2.74px 13.71px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
+}
+
+
+/* ChoiceSum */
+
+.choiceSum {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceSum .content {
+    width: 1020px;
+    padding: 53px 19px;
+    border-radius: 16px;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.choiceSum .content h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.choiceSum .content .bottom {
+    padding-left: 50px;
+    padding-bottom: 21px;
+    padding-right: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choiceSum .content .bottom .currency {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+
+.choiceSum .content .bottom .currency .cryptoIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.choiceSum .content .bottom .currency .name {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.choiceSum .content .bottom .currency .name h5 {
+    font-family: 'gilroy';
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.choiceSum .content .bottom .currency .name span {
+    font-family: 'gilroy';
+    color: rgb(129, 129, 129);
+    font-size: 16px;
+    font-weight: 250;
+    letter-spacing: 2px;
+}
+
+.choiceSum .content .bottom input {
+    box-sizing: border-box;
+    border: 1px solid rgb(232, 232, 233);
+    border-radius: 6px;
+    background: rgb(250, 250, 250);
+    width: 462px;
+    height: 60px;
+    padding-left: 18px;
+    outline: none;
+}
+
+.choiceSum .content .bottom .submit {
+    cursor: pointer;
+    color: white;
+    font-family: 'gilroy';
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 36px;
+    border-radius: 4.39px;
+    box-shadow: 0px 2.74px 13.71px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
+    height: max-content;
+}
+
+
+/* Success */
+
+.succsess {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.succsess .content {
+    padding: 29px 0px 56px 0px;
+    width: 1020px;
+    border-radius: 16px;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    align-items: center;
+}
+
+.succsess .content h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+/* Error */
+
+.error {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.error .content {
+    padding: 29px 0px 56px 0px;
+    width: 1020px;
+    border-radius: 16px;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    align-items: center;
+}
+
+.error .content h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+/* Win */
+
+.win {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.win .content {
+    padding: 29px 0px 56px 0px;
+    width: 1020px;
+    border-radius: 16px;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+}
+
+.win .content h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+/* Fail */
+
+.fail {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.fail .content {
+    padding: 29px 0px 56px 0px;
+    width: 1020px;
+    border-radius: 16px;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+}
+
+.fail .content h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 36px;
+    font-weight: 800;
+}

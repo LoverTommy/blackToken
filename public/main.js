@@ -11,17 +11,6 @@ closeMenu.addEventListener('click', ()=>{
 })
 
 
-const linkToAccount = document.getElementById('linkToAccout');
-const linkToAccountSecond = document.getElementById('linkToAccoutQ');
-
-linkToAccount.addEventListener('click', ()=>{
-    window.location = 'account.html';
-})
-
-linkToAccountSecond.addEventListener('click', ()=>{
-    window.location = 'account.html';
-})
-
 
 const closeWiki = document.getElementById('close');
 const wiki = document.getElementById('wiki');
@@ -32,7 +21,7 @@ closeWiki.addEventListener('click', ()=>{
 })
 
 openWiki.addEventListener('click', ()=>{
-    wiki.style.display = 'block';
+    wiki.style.display = 'flex';
 })
 
 /* wikiGameLinks */
@@ -87,3 +76,11 @@ function jackPotHandler(eo) {
     hatLink.addEventListener('click', hatHandler);
     thimblesLink.addEventListener('click', thimblesHandler);
 }
+
+
+const closeAlert = document.getElementById('closeAlert');
+const alert = document.getElementById('alert');
+
+closeAlert.addEventListener('click', (eo)=>{
+    alert.style.display = 'none';
+})
