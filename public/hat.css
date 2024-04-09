@@ -94,7 +94,7 @@ body::before {
     text-align: center;
 }
 
-.mobileMenu .bottom .navBar a:nth-child(4) {
+.mobileMenu .bottom .navBar a:nth-child(3) {
     background: linear-gradient(90.00deg, rgb(9, 189, 252),rgb(51, 103, 230) 100%);
 }
 
@@ -185,7 +185,7 @@ header .header .navBar ul li a{
     text-decoration: none;
 }
 
-header .header .navBar ul li:nth-child(4) a {
+header .header .navBar ul li:nth-child(3) a {
     padding: 10px 29px;
     border-radius: 6px;
         background: linear-gradient(97.24deg, rgb(1, 201, 253) 0.647%,rgb(51, 103, 230) 117.455%);
@@ -222,6 +222,7 @@ header .header .user .wallet span {
     font-size: 13px;
 }
 
+
 .alert {
     display: grid;
     grid-template-columns: 1fr 40px;
@@ -241,137 +242,235 @@ header .header .user .wallet span {
     text-align: center;
 }
 
-.jackPotGame {
+.alert img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+.hatGame {
     max-width: 1040px;
     width: 100%;
     margin: 0 auto;
     margin-top: 55px;
 }
 
-.jackPotGame .gameContent {
+.hatGame .gameContent {
     display: flex;
     flex-direction: column;
-    gap: 45px;
-}
-
-.jackPotGame .gameContent .gameI {
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
     padding: 46px 20px;
     border-radius: 16px;
     background: rgba(0, 0, 0, 0.16);
+    align-items: center;
+    gap: 49px;
 }
 
-.jackPotGame .gameContent .gameI .alert img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.jackPotGame .gameContent .gameI .jackPotSum {
+.hatGame .gameContent .gameI {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.hatGame .gameContent .gameI .game .currency {
+    display: flex;
     align-items: center;
     width: 100%;
-    height: 74px;
-    border-radius: 6px;
-    background: linear-gradient(90.00deg, rgb(1, 201, 253),rgb(52, 103, 230) 100%);
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
-.jackPotGame .gameContent .gameI .jackPotSum h4 {
+.hatGame .gameContent .gameI .game .currency .cryptoIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.hatGame .gameContent .gameI .game .currency .flex {
+    display: flex;
+    width: 34%;
+    justify-content: space-between;
+}
+
+.hatGame .gameContent .gameI .game .currency .flex .name h4 {
     color: white;
-    font-family: 'Gilroy';
-    font-size: 32px;
-    font-weight: 900;
+    font-family: 'gilroy';
+    font-size: 20px;
+    font-weight: 800;
     letter-spacing: 2px;
 }
 
-.jackPotGame .gameContent .gameI .gameInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .queuePlayers {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .queuePlayers h5 {
-    color: white;
+.hatGame .gameContent .gameI .game .currency .flex .name span {
+    color: rgb(129, 129, 129);
     font-family: 'gilroy';
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .queuePlayers span {
-    color: rgb(48, 109, 232);
-    font-family: 'gilroy';
-    font-size: 10px;
-    font-weight: 500;
-    padding: 6px 4px;
-    border-radius: 6px;
-    background: rgb(29, 29, 29);
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .progress {
-    width: 100%;
-    height: 4px;
-    background-color: rgba(255, 255, 255, 0.425);
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .progress .progressLine {
-    height: 100%;
-    width: 30%;
-    border-radius: 22px;
-    background: linear-gradient(106.57deg, rgb(2, 201, 253) 0.003%,rgb(117, 33, 199) 167.778%);
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .gameRules {
-    display: flex;
-    gap: 51px;
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .gameRules > div h5 {
-    color: white;
-    font-family: 'Gilroy';
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 18.46px;
+    font-weight: 250;
     letter-spacing: 1px;
-}
-
-.jackPotGame .gameContent .gameI .gameInfo .gameRules > div h5 span {
-    color: rgb(48, 109, 232);
-    font-size: 12px;
-    font-weight: 900;
-}
-
-.jackPotGame .gameContent .gameI .bet {
-    display: flex;
-    gap: 7px;
-    padding: 12px 60px;
-    box-sizing: border-box;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 6.26px;
-    box-shadow: 0px 3.91px 19.55px 0px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
-    width: max-content;
-    align-self: center;
-    margin-top: 20px;
-}
-
-.jackPotGame .gameContent .gameI .bet h4 {
-    color: white;
-    font-family: 'play';
-    font-size: 18px;
-    font-weight: 700;
     cursor: pointer;
 }
 
-.jackPotGame .gameContent .players {
+.hatGame .gameContent .gameI .game .currency .flex .amount {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2px;
+}
+
+.hatGame .gameContent .gameI .game .currency .flex .amount span:first-child {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    font-family: 'gilroy';
+}
+
+.hatGame .gameContent .gameI .game .currency .flex .amount span:last-child {
+    font-size: 16px;
+    font-weight: 250;
+    color: rgb(129, 129, 129);
+    font-family: 'gilroy';
+}
+
+.hatGame .gameContent .gameI .game .currency .choice {
+    padding: 9px 70px;
+    color: white;
+    font-family: 'play';
+    font-size: 13px;
+    border-radius: 4.39px;
+    box-shadow: 0px 2.74px 13.71px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
+}
+
+/* mobileCurrency */
+
+.hatGame .gameContent .gameI .mobileCurrency {
+    display: none;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+    width: 100%;
+    column-gap: 20px;
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .cryptoIcon {
+    width: 45px;
+    height: 45px;
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .flex {
+    display: flex;
+    width: max-content;
+    gap: 50px;
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .flex .name h4 {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .flex .name span {
+    color: rgb(129, 129, 129);
+    font-family: 'gilroy';
+    font-size: 18.46px;
+    font-weight: 250;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .flex .amount {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2px;
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .flex .amount span:first-child {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    font-family: 'gilroy';
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .flex .amount span:last-child {
+    font-size: 16px;
+    font-weight: 250;
+    color: rgb(129, 129, 129);
+    font-family: 'gilroy';
+}
+
+.hatGame .gameContent .gameI .mobileCurrency .choice {
+    padding: 9px 70px;
+    color: white;
+    font-family: 'play';
+    font-size: 13px;
+    border-radius: 4.39px;
+    box-shadow: 0px 2.74px 13.71px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
+    grid-column: 1/span 2;
+}
+
+
+
+
+
+
+.hatGame .gameContent .gameI .game .bet {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.hatGame .gameContent .gameI .game .bet input {
+    width: 460px;
+    padding: 19px 20px;
+    height: max-content;
+    border: 1px solid rgb(232, 232, 233);
+    border-radius: 6px;
+    background: rgb(250, 250, 250);
+    outline: none;
+}
+
+.hatGame .gameContent .gameI .game .bet p {
+    color: white;
+    font-family: 'gilroy';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hatGame .gameContent .gameI .game .bet p span {
+    color: rgb(48, 109, 232);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.hatGame .gameContent .gameI .game .startGame {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    cursor: pointer;
+    color: white;
+    font-family: 'play';
+    font-size: 19px;
+    font-weight: 700;
+    padding: 13px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6.26px;
+    box-shadow: 0px 3.91px 19.55px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
+}   
+
+.hatGame .gameContent .gameI .game {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hatGame .players {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -379,7 +478,7 @@ header .header .user .wallet span {
     width: 98%;
 }
 
-.jackPotGame .gameContent .scroll {
+.hatGame .scroll {
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -388,18 +487,18 @@ header .header .user .wallet span {
     width: 98%;
 }
 
-.jackPotGame .gameContent .scroll::-webkit-scrollbar {
+.hatGame .scroll::-webkit-scrollbar {
     width: 5px;
     border-radius: 10px;
     background: rgba(139, 139, 139, 0.253); 
 }
 
-.jackPotGame .gameContent .scroll::-webkit-scrollbar-thumb {
+.hatGame .scroll::-webkit-scrollbar-thumb {
     border-radius: 57px;
     background: rgb(51, 104, 230);
 }
 
-.jackPotGame .gameContent .players > div {
+.hatGame .players > div {
     width: 98%;
     height: 36px;
     display: flex;
@@ -411,46 +510,44 @@ header .header .user .wallet span {
     padding: 10px 15px;
 }
 
-.jackPotGame .gameContent .players > div .userAvatar {
+.hatGame .players > div .userAvatar {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-.jackPotGame .gameContent .players > div .pay {
+.hatGame .players > div .pay {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.jackPotGame .gameContent .players > div .pay .wallet {
+.hatGame .players > div .pay .wallet {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-.jackPotGame .gameContent .players > div .pay .wallet img {
+.hatGame .players > div .pay .wallet img {
     width: 19px;
     height: 19px;
 }
 
-.jackPotGame .gameContent .players > div .pay .wallet p {
+.hatGame .players > div .pay .wallet p {
     color: white;
     font-family: 'play';
     font-size: 16px;
 }
 
-.jackPotGame .gameContent .players > div .pay p {
+.hatGame .players > div .pay p {
     color: white;
     font-family: 'play';
     font-size: 16px;
 }
 
-.jackPotGame .gameContent .players > div .pay p span {
+.hatGame .players > div .pay p span {
     font-weight: 700;
 }
-
-
 
 
 footer {
