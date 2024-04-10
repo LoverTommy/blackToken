@@ -39,3 +39,16 @@ choiceSton.addEventListener('click', ()=>{
     tonSum.style.display = 'none'
     gramSum.style.display = 'none'
 })
+
+
+choiceCurrency.addEventListener('click', (eo)=>{
+    if(eo.target.id === 'choiceCurrency') {
+        eo.target.style.display = 'none';
+    }
+})
+
+choiceSum.addEventListener('click', (eo)=>{
+    if(eo.target.id === 'choiceSum') {
+        eo.target.style.display = 'none';
+    }
+})

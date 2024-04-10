@@ -43,3 +43,10 @@ thisChoiceSton.addEventListener('click', ()=> {
     gram.style.display = 'none';
     ston.style.display = 'flex';
 })
+
+choiceCurrencyThimbles.addEventListener('click', (eo)=>{
+    if(eo.target.id === 'choiceCurrencyThimbles') {
+        eo.target.style.display = 'none';
+    }
+})
+

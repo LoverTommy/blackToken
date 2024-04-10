@@ -86,3 +86,9 @@ thisChoiceSton.addEventListener('click', ()=> {
         ston.style.display = 'flex';
     }
 })
+
+choiceCurrency.addEventListener('click', (eo)=>{
+    if(eo.target.id === 'choiceCurrency') {
+        eo.target.style.display = 'none';
+    }
+})

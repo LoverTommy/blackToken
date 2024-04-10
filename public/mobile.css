@@ -1004,6 +1004,7 @@
 
     footer {
         padding: 0 20px;
+        padding-bottom: 100%;
     }
 
     footer .footer a {
@@ -1012,8 +1013,19 @@
     }
 
     footer .footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .links .twitter img,
+    footer .links .help img {
         width: 25px;
         height: 25px;
+    }
+
+    footer .links .twitter a,
+    footer .links .help a {
+        font-size: 14px;
     }
 
     .mobileMenu .bottom .navBar {

@@ -460,22 +460,27 @@ header .header .user .wallet span {
 
 footer {
     margin-top: 64px;
-    height: 77px;
+    height: max-content;
     background: rgb(30, 30, 40);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    height: 200px;
+    padding: 15px;
 }
 
 footer .footer {
     display: flex;
-    height: 100%;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    
+    height: max-content;
 }
 
 footer .footer img {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -487,6 +492,50 @@ footer .footer a {
     font-family: 'gilroy';
     font-size: 16px;
     text-decoration: none;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .links .twitter,
+footer .links .help {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .links .twitter img {
+    width: 34px;
+    height: 28px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+footer .links .twitter a {
+    font-family: 'gilroy';
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+footer .links .help img {
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    object-fit: contain;
+}
+
+footer .links .help a {
+    font-family: 'gilroy';
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
 /* wiki */
