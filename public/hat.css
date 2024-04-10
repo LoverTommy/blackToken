@@ -250,6 +250,11 @@ header .header .user .wallet span {
 
 
 
+.hatGame #gram,
+.hatGame #ston {
+    display: none;
+}
+
 .hatGame {
     max-width: 1040px;
     width: 100%;
@@ -285,6 +290,7 @@ header .header .user .wallet span {
 .hatGame .gameContent .gameI .game .currency .cryptoIcon {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 .hatGame .gameContent .gameI .game .currency .flex {
@@ -344,6 +350,11 @@ header .header .user .wallet span {
 
 /* mobileCurrency */
 
+.hatGame #mobileGram,
+.hatGame #mobileSton {
+    display: none;
+}
+
 .hatGame .gameContent .gameI .mobileCurrency {
     display: none;
     grid-template-columns: 45px 1fr;
@@ -355,6 +366,7 @@ header .header .user .wallet span {
 .hatGame .gameContent .gameI .mobileCurrency .cryptoIcon {
     width: 45px;
     height: 45px;
+    border-radius: 50%;
 }
 
 .hatGame .gameContent .gameI .mobileCurrency .flex {
@@ -410,6 +422,7 @@ header .header .user .wallet span {
     box-shadow: 0px 2.74px 13.71px 0px rgba(0, 0, 0, 0.15);
     background: linear-gradient(90.00deg, rgb(0, 203, 254),rgb(52, 101, 229) 100%);
     grid-column: 1/span 2;
+    cursor: pointer;
 }
 
 
