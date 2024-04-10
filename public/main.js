@@ -11,7 +11,6 @@ closeMenu.addEventListener('click', ()=>{
 })
 
 
-
 const closeWiki = document.getElementById('close');
 const wiki = document.getElementById('wiki');
 const openWiki = document.getElementById('openWiki');

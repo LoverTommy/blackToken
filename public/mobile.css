@@ -377,8 +377,9 @@
 
     .wiki .wikiContent {
         overflow-y: scroll;
-        height: 800px;
-        top: 20px;
+        height: 90%;
+        top: 0;
+
     }
 
     .wiki .wikiContent::-webkit-scrollbar {
