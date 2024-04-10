@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bet">
+                        <div class="bet" id="bet">
                             <h4>Сделать ставку</h4>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="choiceCurrency">
+            <div class="choiceCurrency" id="choiceCurrency">
                 <div class="content">
                     <h4>Выберите валюту:</h4>
                     <div class="cryptoBalance">
@@ -293,7 +293,7 @@
                                         <span>$0</span>
                                     </div>
                                 </div>
-                                <span class="choice">Выбрать</span>
+                                <span class="choice" id="choiceTon">Выбрать</span>
                             </div>
                         </div>
                         <div class="gram">
@@ -309,7 +309,7 @@
                                         <span>$0</span>
                                     </div>
                                 </div>
-                                <span class="choice">Выбрать</span>
+                                <span class="choice" id="choiceGram">Выбрать</span>
                             </div>
                         </div>
                         <div class="ston">
@@ -325,23 +325,7 @@
                                         <span>$0</span>
                                     </div>
                                 </div>
-                                <span class="choice">Выбрать</span>
-                            </div>
-                        </div>
-                        <div class="gram">
-                            <img class="cryptoIcon" src="../images/gram.png" alt="ton">
-                            <div class="info">
-                                <div class="flex">
-                                    <div class="name">
-                                        <h4>GRAM</h4>
-                                        <span>GRAM <img src="../images/arrow.svg" alt="arrow"> </span>
-                                    </div>
-                                    <div class="amount">
-                                        <span>0</span>
-                                        <span>$0</span>
-                                    </div>
-                                </div>
-                                <span class="choice">Выбрать</span>
+                                <span class="choice" id="choiceSton">Выбрать</span>
                             </div>
                         </div>
                     </div>
@@ -349,15 +333,43 @@
             </div>
 
 
-            <div class="choiceSum">
+            <div class="choiceSum" id="choiceSum">
                 <div class="content">
                     <h4>Введите сумму:</h4>
-                    <div class="bottom">
+                    <div class="bottom" id="tonSum">
                         <div class="currency">
                             <img class="cryptoIcon" src="../images/ton.png" alt="ton">
                             <div class="name">
                                 <h5>TON</h5>
                                 <span>TON<img src="../images/arrow.svg" alt="arrow"></span>
+                            </div>
+                        </div>
+
+                        <input type="text" placeholder="Введите сумму..">
+
+                        <span class="submit" >Подтвердить</span>
+                    </div>
+
+                    <div class="bottom" id="gramSum">
+                        <div class="currency">
+                            <img class="cryptoIcon" src="../images/gram.png" alt="gram">
+                            <div class="name">
+                                <h5>GRAM</h5>
+                                <span>GRAM<img src="../images/arrow.svg" alt="arrow"></span>
+                            </div>
+                        </div>
+
+                        <input type="text" placeholder="Введите сумму..">
+
+                        <span class="submit" >Подтвердить</span>
+                    </div>
+
+                    <div class="bottom" id="stonSum">
+                        <div class="currency">
+                            <img class="cryptoIcon" src="../images/ston.jpg" alt="ston">
+                            <div class="name">
+                                <h5>STON</h5>
+                                <span>STON<img src="../images/arrow.svg" alt="arrow"></span>
                             </div>
                         </div>
 

@@ -97,7 +97,7 @@
                                         <span>$0</span>
                                     </div>
                                 </div>
-                                <span class="choice">Выбрать</span>
+                                <span class="choice" id="thisChoice">Выбрать</span>
                             </div>
                             <div class="bet">
                                 <input type="text" placeholder="Введите сумму...">
@@ -293,11 +293,11 @@
                 </div>
             </div>
 
-            <div class="choiceCurrency">
+            <div class="choiceCurrency" id="choiceCurrency">
                 <div class="content">
                     <h4>Выберите валюту:</h4>
                     <div class="cryptoBalance">
-                        <div class="ton">
+                        <div class="ton" id="thisChoiceTon">
                             <img class="cryptoIcon" src="../images/ton.png" alt="ton">
                             <div class="info">
                                 <div class="flex">
@@ -313,7 +313,7 @@
                                 <span class="choice">Выбрать</span>
                             </div>
                         </div>
-                        <div class="gram">
+                        <div class="gram" id="thisChoiceGram">
                             <img class="cryptoIcon" src="../images/gram.png" alt="ton">
                             <div class="info">
                                 <div class="flex">
@@ -329,29 +329,13 @@
                                 <span class="choice">Выбрать</span>
                             </div>
                         </div>
-                        <div class="ston">
+                        <div class="ston" id="thisChoiceSton">
                             <img class="cryptoIcon" src="../images/ston.jpg" alt="ton">
                             <div class="info">
                                 <div class="flex">
                                     <div class="name">
                                         <h4>STON</h4>
                                         <span>STON <img src="../images/arrow.svg" alt="arrow"> </span>
-                                    </div>
-                                    <div class="amount">
-                                        <span>0</span>
-                                        <span>$0</span>
-                                    </div>
-                                </div>
-                                <span class="choice">Выбрать</span>
-                            </div>
-                        </div>
-                        <div class="gram">
-                            <img class="cryptoIcon" src="../images/gram.png" alt="ton">
-                            <div class="info">
-                                <div class="flex">
-                                    <div class="name">
-                                        <h4>GRAM</h4>
-                                        <span>GRAM <img src="../images/arrow.svg" alt="arrow"> </span>
                                     </div>
                                     <div class="amount">
                                         <span>0</span>
@@ -417,6 +401,7 @@
         </div>
     </div>
 
+    <script src="hat.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

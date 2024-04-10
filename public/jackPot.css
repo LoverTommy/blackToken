@@ -361,6 +361,7 @@ header .header .user .wallet span {
     width: max-content;
     align-self: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .jackPotGame .gameContent .gameI .bet h4 {
@@ -807,6 +808,11 @@ footer .footer a {
 
 /* ChoiceSum */
 
+.choiceSum .content #gramSum,
+.choiceSum .content #stonSum {
+    display: none;
+}
+
 .choiceSum {
     width: 100%;
     height: 100%;
@@ -854,6 +860,7 @@ footer .footer a {
 .choiceSum .content .bottom .currency .cryptoIcon {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 .choiceSum .content .bottom .currency .name {
