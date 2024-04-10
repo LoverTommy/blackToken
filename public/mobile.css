@@ -1048,6 +1048,10 @@
         top: 0;
     }
 
+    .wiki {
+        height: 100%;
+    }
+
 
     .wiki .wikiContent .header .games {
         flex-direction: column;
