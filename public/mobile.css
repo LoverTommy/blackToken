@@ -1193,14 +1193,14 @@
     
     .choiceCurrency .content {
         padding: 19px 13px;
-        width: 280px;
+        width: 90%;
         border-radius: 4.4px;
         gap: 20px;
     }
 
     .choiceCurrency .content .cryptoBalance > div .cryptoIcon {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .name {
@@ -1210,22 +1210,23 @@
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .name h4 {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .name span {
-        font-size: 7px;
+        font-size: 10px;
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .name span img {
-        width: 6px;
+        width: 8px;
+        height: 8px;
     }
 
     .choiceCurrency .content .cryptoBalance {
         width: 100%;
         padding-right: 5px;
-        gap: 10px;
-        height: 100px;
+        gap: 20px;
+        height: 124px;
     }
 
     .choiceCurrency .content .cryptoBalance::-webkit-scrollbar {
@@ -1237,11 +1238,11 @@
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .amount span:first-child {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .amount span:last-child {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .choiceCurrency .content .cryptoBalance > div .info .amount {
@@ -1250,7 +1251,7 @@
 
 
     .choiceCurrency .content .cryptoBalance > div .info .choice {
-        padding: 4px 32px;
+        padding: 6px 32px;
         font-size: 6px;
         border-radius: 2.04px;
     }
@@ -1260,7 +1261,7 @@
     }
 
     .choiceCurrency .content h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
 
