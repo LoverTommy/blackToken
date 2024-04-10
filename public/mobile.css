@@ -1030,6 +1030,11 @@
     .mobileMenu .bottom {
         gap: 50px;
     }
+    
+    .wiki .wikiContent {
+        padding-bottom: 140px;
+        top: 0;
+    }
 
 
     .wiki .wikiContent .header .games {
@@ -1079,6 +1084,13 @@
         gap: 10px;
     }
 
+    .jackPotGame {
+        margin-top: 0;
+    }
+
+    .thimblesGame {
+        margin-top: 0;
+    }
 
     .jackPotGame .gameContent .players > div .userAvatar,
     .thimblesGame .players > div .userAvatar,
@@ -1123,7 +1135,7 @@
 
     .jackPotGame .gameContent .scroll {
         height: 90px;
-        width: 90%;
+        width: 100%;
         align-self: center;
         padding-right: 0;
     }

@@ -19,7 +19,7 @@ jackPotBetButton.addEventListener('click', ()=> {
 choiceTon.addEventListener('click', ()=>{
     choiceCurrency.style.display = 'none';
     choiceSum.style.display = 'flex'
-    tonSum.style.display = 'grid'
+    tonSum.style.display = 'flex'
     gramSum.style.display = 'none'
     stonSum.style.display = 'none'
 })
@@ -27,16 +27,15 @@ choiceTon.addEventListener('click', ()=>{
 choiceGram.addEventListener('click', ()=>{
     choiceCurrency.style.display = 'none';
     choiceSum.style.display = 'flex'
-    gramSum.style.display = 'grid'
+    gramSum.style.display = 'flex'
     tonSum.style.display = 'none'
     stonSum.style.display = 'none'
 })
 
 choiceSton.addEventListener('click', ()=>{
-    console.log('dsa')
     choiceCurrency.style.display = 'none';
     choiceSum.style.display = 'flex'
-    stonSum.style.display = 'grid'
+    stonSum.style.display = 'flex'
     tonSum.style.display = 'none'
     gramSum.style.display = 'none'
 })
